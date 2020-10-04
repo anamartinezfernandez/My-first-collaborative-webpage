@@ -1,0 +1,39 @@
+@mixin smartphone {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin font-normal {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@mixin contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+@mixin variableBox {
+  margin-top: 5px;
+  padding-left: 3px;
+  font-family: $font-secondary;
+  font-size: 14px;
+}
+
+@mixin spin-effect {
+  animation-name: spin;
+  animation: spin 0.8s once linear;
+}

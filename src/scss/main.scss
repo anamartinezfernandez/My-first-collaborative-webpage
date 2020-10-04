@@ -1,0 +1,30 @@
+// Core
+@import "./core/reset.scss";
+@import "./core/variables.scss";
+@import "./core/mixins.scss";
+@import "./core/keyframes.scss";
+
+// Components
+@import "./components/links.scss";
+
+// Layout
+/* BODY */
+@import "./layout/page.scss";
+
+/* HEADER */
+@import "./layout/header.scss";
+
+/* HERO */
+@import "./layout/hero.scss";
+
+/* ABOUT US */
+@import "./layout/aboutus.scss";
+
+/* ADALABERS */
+@import "./layout/adalabers.scss";
+
+/* FOOTER */
+@import "./layout/footer.scss";
+
+/* CONTACT PAGE*/
+@import "./layout/contact.scss";

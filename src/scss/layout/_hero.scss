@@ -1,0 +1,30 @@
+.hero {
+  &__image {
+    width: 100vw;
+    margin-top: 110px;
+  }
+  &__motto {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: -30px;
+    background-color: $color-white;
+    @include tablet {
+      margin: 0 115px 0 115px;
+      top: -40px;
+    }
+    @include desktop {
+      margin: 0 138px 0 138px;
+      top: -60px;
+    }
+  }
+  &__mottoText {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    font-family: $font-secondary;
+    @include font-normal;
+  }
+}

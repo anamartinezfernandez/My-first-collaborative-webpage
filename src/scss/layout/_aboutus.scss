@@ -1,0 +1,92 @@
+.story {
+  margin-top: -66px;
+  padding: 60px 15px 30px 15px;
+  @include tablet {
+    padding: 45px 45px 60px 45px;
+  }
+  @include desktop {
+    padding: 45px 300px 60px 300px;
+  }
+}
+.aboutUS__strengths,
+.aboutUS__weaknesses {
+  &--title {
+    font-family: $font-main;
+    font-size: 22px;
+    color: $color-tertiary;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 500;
+    @include font-normal;
+  }
+}
+
+.aboutUS__strengths {
+  padding: 15px 15px 15px 15px;
+  @include tablet {
+    width: 50%;
+    padding: 15px 15px 60px 45px;
+  }
+  @include desktop {
+    padding: 15px 23px 60px 45px;
+  }
+}
+
+.aboutUS__weaknesses {
+  padding: 15px 15px 45px 15px;
+  @include tablet {
+    width: 50%;
+    padding: 15px 45px 60px 15px;
+  }
+  @include desktop {
+    padding: 15px 45px 60px 23px;
+  }
+}
+.aboutUS__triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 31px solid $color-none;
+  border-right: 31px solid $color-none;
+  border-top: 31px solid $color-white;
+  margin: -1px auto;
+}
+.aboutUS {
+  background-color: $color-secondary-light;
+  @include desktop {
+    margin: auto 138px;
+  }
+}
+.story__title {
+  font-weight: 500;
+  text-align: center;
+  line-height: 45px;
+  padding: 0 0 15px 0;
+  font-family: $font-main;
+  color: $color-tertiary;
+  font-size: $font-title;
+  @include font-normal;
+}
+
+.story__text,
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-secondary;
+  font-family: $font-secondary;
+}
+
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
+  @include tablet {
+    padding: 15px 0 0 0;
+  }
+}
+
+.aboutUS__wrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
+}

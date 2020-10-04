@@ -1,0 +1,624 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* ESTILOS HEADER */
+
+.header {
+  width: 100%;
+  height: 105px;
+  box-sizing: border-box;
+  position: fixed;
+  align-content: center;
+  text-transform: uppercase;
+  background: rgba(9, 157, 141, 0.95);
+  opacity: 95%;
+  z-index: 2;
+}
+/* NOMBRE EQUIPO */
+.headername {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  opacity: 95%;
+}
+/* MENÚ */
+.teamname {
+  line-height: 30px;
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: white;
+  padding-top: 15px;
+}
+.menu {
+  display: block;
+  width: 100vw;
+  height: 45px;
+}
+.headermenu {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  list-style: none;
+  background-color: #14d9c4;
+}
+/* LINKS MENÚ */
+.team,
+.aboutus,
+.contact {
+  line-height: 30px;
+  font-family: "rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: white;
+}
+.team {
+  width: 56px;
+  height: 30px;
+}
+.aboutus {
+  width: 121px;
+  height: 30px;
+}
+.contact {
+  width: 80px;
+  height: 30px;
+}
+/* ESTILOS HERO */
+
+.hero-image {
+  width: 100vw;
+  margin-top: 60px;
+}
+
+/* LEMA HERO */
+.motto {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: -30px;
+  text-justify: center;
+  background-color: white;
+}
+.mottotext {
+  padding: 15px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+/* ABOUT US */
+.story,
+.strengths,
+.weaknesses,
+.adalabers-container {
+  padding: 30px 15px 30px 15px;
+}
+
+.story {
+  margin-top: -66px;
+  padding-top: 45px;
+}
+
+.strengths {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.weaknesses {
+  padding-bottom: 45px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-top: 31px solid white;
+  margin: -1px auto;
+}
+
+.about-us-container {
+  background-color: #b8b8b9;
+}
+
+.title {
+  font-family: "Rubik";
+  letter-spacing: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 45px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.text1,
+.text2,
+.text3 {
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.title1 {
+  font-size: 24px;
+  color: #14d9c4;
+}
+
+.title2,
+.title3 {
+  color: #099d8d;
+  font-size: 22px;
+}
+
+/* ADALABERS */
+.adalabers-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.who-we-are-h1 {
+  color: #099d8d;
+  font-size: 24px;
+  font-family: "Rubik";
+  line-height: 45px;
+}
+
+.girl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.girl-image {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+  border-radius: 2%;
+}
+.girl-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.girl-name {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Open Sans;
+}
+
+.girl-description {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+}
+.icons {
+  display: flex;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-around;
+}
+
+.icon {
+  color: #099d8d;
+}
+
+.dot {
+  color: #54585a;
+}
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #b8b8b9;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.copy2020 {
+  height: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #b8b8b9;
+}
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  width: 114px;
+  height: 60px;
+  opacity: 0.75;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.team-1,
+.team-1:visited,
+.aboutus-1,
+.aboutus-1:visited,
+.contact-1,
+.contact-1:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.logo {
+  width: 115.9px;
+  height: 45px;
+}
+
+/* ------------------------MEDIA QUERIES----------------------
+/*------------------------BREAKPOINT PARA TABLET----------------------*/
+
+@media all and (min-width: 768px) {
+  .story,
+  .adalabers-container {
+    padding: 45px 45px 60px 45px;
+  }
+
+<<<<<<< HEAD
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 31px solid transparent;
+    border-right: 31px solid transparent;
+    border-top: 31px solid white;
+    margin: -1px auto;
+    transform: translate(50vw, 0);
+  }
+
+  .about-us-container {
+    background-color: #b8b8b9;
+    display: flex;
+=======
+  .about-us-wrapper {
+    display:flex;
+>>>>>>> master
+    flex-direction: row;
+    padding: 15px 45px 60px 45px;
+  }
+
+  .strengths, .weaknesses {
+    margin: 0;
+  }
+
+  .title {
+    padding-bottom: 15px;
+  }
+
+  /* ----------ABOUT US SECTION- ENDS------------ */
+  /*---------------ADALABERS SECTION -START---------------*/
+main {
+    width: 100%;
+  }
+  .who-we-are-h1 {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    line-height: 45px;
+  }
+  .girl-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 25px 60px 25px;
+  }
+
+  .girl-2,
+  .girl-4 {
+    flex-direction: row-reverse;
+  }
+  .girl-image {
+    width: 205px;
+  }
+
+  .girl-text {
+    width: 439px;
+  }
+
+  .girl-text-1,
+  .girl-text-3,
+  .girl-text-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .girl-text-2,
+  .girl-text-4 {
+    align-items: flex-end;
+  }
+
+  .girl-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+  /*---------------ADALABERS SECTION - END---------------*/
+
+  /*---------------FOOTER SECTION - START----------------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    border-top: 1px solid #b8b8b9;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  .copy2020 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b8b8b9;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 114px;
+    height: 60px;
+    opacity: 0.75;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .logo {
+    width: 115.9px;
+    height: 45px;
+  }
+
+  /*------------FOOTER SECTION -ENDS-------------  */
+
+  /*------------------------BREAKPOINT PARA DESKTOP----------------------*/
+
+<<<<<<< HEAD
+  /* @media all and (min-width: 1200px) {
+=======
+@media all and (min-width: 1200px) {
+>>>>>>> master
+  main {
+    max-width: 1200px;
+  }
+  /* ------------ABOUT US SECTION - START ------------ */
+
+
+  }
+  .title {
+    font-family: "Rubik";
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .text1,
+  .text2,
+  .text3 {
+    font-family: "Open Sans";
+    text-align: center;
+  }
+  .text1,
+  .text2 {
+    margin-bottom: 60px;
+    margin-right: 22px;
+    padding-bottom: 45px;
+  }
+
+  .title1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 1.88;
+    color: #14d9c4;
+    padding-top: 45px;
+    margin-bottom: 15px;
+  }
+
+  .title2,
+  .title3 {
+    margin-top: 45px;
+    color: #099d8d;
+    height: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.05;
+  }
+
+  /*---------------ADALABERS SECTION - START---------------*/
+
+  .who-we-are-h1 {
+    margin-top: 45px;
+    line-height: 45px;
+  }
+  .girl-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 25px 60px 25px;
+  }
+
+  .girl-2,
+  .girl-4 {
+    flex-direction: row-reverse;
+  }
+  .girl-image {
+    width: 278px;
+  }
+
+  .girl-text {
+    width: 439px;
+  }
+
+  .girl-text-1,
+  .girl-text-3,
+  .girl-text-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*esto sería para que tanto el nombre de la chica como la descripción se alineen en el eje horizontal al inicio*/
+  /* padding: 45px;
+    margin-top: 20px; */
+  }
+
+  .girl-text-2,
+  .girl-text-4 {
+    align-items: flex-end;
+  }
+
+  .girl-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .girl-description-1,
+  .girl-description-3,
+  .girl-description-5 {
+    text-align: left;
+  }
+
+  .girl-description-2,
+  .girl-description-4 {
+    text-align: right;
+  }
+
+  /*---------------ADALABERS SECTION - END---------------*/
+
+  /* ----------FOOTER SECTION - START----------- */
+<<<<<<< HEAD
+  @media all and (min-width: 1200px) {
+    
+    footer {
+=======
+  footer {
+>>>>>>> master
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #b8b8b9;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+  .copy2020 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b8b8b9;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 114px;
+    height: 60px;
+    opacity: 0.75;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+    color: #54585a;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+}

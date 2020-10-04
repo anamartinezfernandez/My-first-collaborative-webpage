@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <div class="header__headerName">
+        <img
+          class="header__teamName"
+          src="./assets/images/logo/logoequipo.png"
+          alt=""
+        />
+      </div>
+      <div class="header__menu">
+        <nav>
+          <ul class="header__menuList">
+            <li>
+              <a class="header__link--team" href="./index.html#team">Equipo</a>
+            </li>
+            <li>
+              <a class="header__link--aboutus" href="./index.html#us"
+                >Quiénes somos</a
+              >
+            </li>
+            <li>
+              <a class="header__link--contact" href="./contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <div class="imageContactContainer">  
+      <img class="imageContactContainer__image" src="./assets/images/hero/herocontact.jpg" alt="hero"  />
+    </div>
+    <main class="main">
+      <div class="main__introContainer">
+        <h1 class="main__introContainer--title">Contacta con nosotras</h1>
+        <p class="main__introContainer--text">
+          En estos momentos todas nuestras líneas están saturadas. Si quieres
+          ponerte en contacto con nosotras, rellena el siguiente formulario y te
+          responderemos lo antes posible.
+        </p>
+        <small class="main__introContainer--small"
+          >Todos los campos marcados con <span class="star">*</span> son
+          obligatorios</small
+        >
+      </div>
+
+      <form class="main__formContainer" action="https://formspree.io/xeqpqkbv" method="post">
+        <div class="main__formContainer--fieldName">
+          <label for="firstName"
+            >Nombre completo <span class="star">*</span>
+          </label>
+          <input class="variableBoxName" id="firstName" type="text" name="firstName" placeholder="Nombre" />
+        </div>
+        <div class="main__formContainer--fieldEmail">
+          <label for="email">E-mail <span class="star">*</span></label>
+          <input
+            class="variableBoxEmail"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="nombre.apellidos@mail.com"
+          />
+        </div>
+        <div class="main__formContainer--fieldTelephone">
+          <label for="telephone">Teléfono</label>
+          <input
+            class="variableBoxTelephone"
+            id="telephone"
+            type="tel"
+            name="telephone"
+            placeholder="ej.: 123456789"
+          />
+        </div>
+        <div class="main__formContainer--fieldMessage">
+          <label for="message">Mensaje <span class="star">*</span> </label>
+          <textarea
+            class="variableBoxMsg"
+            id="message"
+            name="message"
+            rows="8"
+            cols="25%"
+            placeholder="¿Qué necesitas?"
+          ></textarea>
+        </div>
+        <input class="main__formContainer--button" type="submit" value="ENVIAR" /> 
+        <!-- No hay un texto como tal en "enviar" por eso no se puede transformar en mayúscylas -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer__copy2020">Las Chicas del Coding &copy2020</p>
+      <nav class="footer__footerMenu">
+        <ul class="footer__footerMenuLink">
+          <li>
+            <a class="footer__footerMenuLink--team" href="./index.html#team">Equipo</a>
+          </li>
+          <li>
+            <a class="footer__footerMenuLink--aboutUs" href="./index.html#us">Quiénes somos</a>
+          </li>
+          <li>
+            <a class="footer__footerMenuLink--contact" href="./contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__footerLogo">
+        <a href="https://adalab.es/empresas/" target="blank"
+          ><img
+            class="footerLogo__logo"
+            src="./assets/images/logo/logoadalab.png"
+            alt="logo-adalab"/>
+          </a>
+      </div>
+    </footer>
+
+  </body>
+</html>

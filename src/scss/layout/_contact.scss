@@ -1,0 +1,100 @@
+@import "./header.scss";
+
+.imageContactContainer__image {
+  width: 100vw;
+  margin: 110px 0 0 0;
+}
+.main {
+  margin: 30px auto 60px auto;
+  @include tablet {
+    max-width: 442px;
+    margin: 30px auto 60px auto;
+  }
+  @include desktop {
+    max-width: 600px;
+    margin: 45px auto 120px auto;
+  }
+  &__introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &--title {
+      font-family: $font-main;
+      text-transform: uppercase;
+      color: $color-tertiary;
+      font-size: $font-title;
+    }
+    &--text {
+      font-family: $font-secondary;
+      color: $color-secondary;
+      font-size: $font-text;
+      padding: 15px 15px;
+    }
+    &--small {
+      font-family: $font-secondary;
+      color: $color-secondary;
+      font-size: 14px;
+      padding: 15px 0 60px 0;
+    }
+  }
+  &__formContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-secondary;
+    font-size: 14px;
+    color: $color-secondary;
+    @include smartphone {
+      max-width: 300px;
+      margin: 30px auto 60px auto;
+    }
+    &--fieldName,
+    &--fieldEmail,
+    &--fieldTelephone,
+    &--fieldMessage {
+      @include contact;
+    }
+    &--button {
+      height: 45px;
+      font-family: $font-secondary;
+      color: $color-white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+      background-color: $color-tertiary;
+      border: none;
+      border-radius: 3px;
+      &:hover {
+        background-color: #4ac29a;
+        rotate: 50deg;
+      }
+      transition: all 0.8s;
+      @include font-normal;
+      @include tablet {
+        width: 206px;
+        align-self: flex-end;
+      }
+      @include desktop {
+        width: 278px;
+      }
+    }
+  }
+}
+.star {
+  color: $color-tertiary-light;
+}
+
+@import "./footer.scss";
+
+.variableBoxName,
+.variableBoxEmail,
+.variableBoxTelephone {
+  height: 45px;
+  @include variableBox;
+}
+
+.variableBoxMsg {
+  padding: 3px 0 0 0;
+  @include variableBox;
+}

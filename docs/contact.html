@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="header" role="banner">
+      <div class="header__headerName">
+        <a href=./index.html
+        title="Ir a página principal"
+        aria-label="Ir a página principal"><img
+          class="header__teamName"
+          src="./assets/images/logo/logoequipo.png"
+          alt="Las Chicas del Coding"
+          title="Las Chicas del Coding"
+        /></a>
+      </div>
+      <div class="header__menu" aria-label="Menu">
+        <nav role="navigation">
+          <ul class="header__menuList">
+            <li>
+              <a
+                class="header__link--team"
+                href="./index.html#team"
+                title="Ir a equipo"
+                aria-label="Ir a Equipo"
+                >Equipo</a
+              >
+            </li>
+            <li>
+              <a
+                class="header__link--aboutus"
+                href="./index.html#us"
+                title="Ir a quiénes somos"
+                aria-label="Ir a quiénes somos"
+                >Quiénes somos</a
+              >
+            </li>
+            <li>
+              <a
+                class="header__link--contact"
+                href="./contact.html"
+                title="Contacta con nosotras"
+                aria-label="Contacta con nosotras"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <div class="imageContactContainer">  
+      <img class="imageContactContainer__image" src="./assets/images/hero/herocontact.jpg" alt="Centralita" aria-label="Imagen Contacta con nosotras"  />
+    </div>
+    <main class="main" role="main">
+      <div class="main__introContainer">
+        <h1 class="main__introContainer--title">Contacta con nosotras</h1>
+        <p class="main__introContainer--text">
+          En estos momentos todas nuestras líneas están saturadas. Si quieres
+          ponerte en contacto con nosotras, rellena el siguiente formulario y te
+          responderemos lo antes posible.
+        </p>
+        <small class="main__introContainer--small"
+          >Todos los campos marcados con <span class="star">*</span> son
+          obligatorios</small
+        >
+      </div>
+
+      <form class="main__formContainer" action="https://formspree.io/xeqpqkbv" method="post" role="form">
+        <div class="main__formContainer--fieldName">
+          <label for="firstName"
+            >Nombre completo <span class="star">*</span>
+          </label>
+          <input class="variableBoxName" id="firstName" type="text" name="firstName" placeholder="Nombre" required />
+        </div>
+        <div class="main__formContainer--fieldEmail">
+          <label for="email">E-mail <span class="star">*</span></label>
+          <input
+            class="variableBoxEmail"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="nombre.apellidos@mail.com"
+            required
+          />
+        </div>
+        <div class="main__formContainer--fieldTelephone">
+          <label for="telephone">Teléfono</label>
+          <input
+            class="variableBoxTelephone"
+            id="telephone"
+            type="tel"
+            name="telephone"
+            placeholder="ej.: 123456789"
+          />
+        </div>
+        <div class="main__formContainer--fieldMessage">
+          <label for="message">Mensaje <span class="star">*</span> </label>
+          <textarea
+            class="variableBoxMsg"
+            id="message"
+            name="message"
+            rows="8"
+            cols="25%"
+            placeholder="¿Qué necesitas?" 
+            required
+          ></textarea>
+        </div>
+        <input class="main__formContainer--button" type="submit" value="ENVIAR" /> 
+        <!-- No hay un texto como tal en "enviar" por eso no se puede transformar en mayúscylas -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <p class="footer__copy2020">Las Chicas del Coding &copy2020</p>
+      <nav class="footer__footerMenu" role="navigation">
+        <ul class="footer__footerMenuLink">
+          <li>
+            <a
+              class="footer__footerMenuLink--team"
+              href="./index.html#team"
+              aria-label="Ir a Equipo"
+              >Equipo</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__footerMenuLink--aboutUs"
+              href="./index.html#us"
+              aria-label="Ir a Quiénes somos"
+              >Quiénes somos</a
+            >
+          </li>
+          <li>
+            <a
+              class="footer__footerMenuLink--contact"
+              href="./contact.html"
+              aria-label="Contacta con nosotras"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__footerLogo">
+        <a
+          href="https://adalab.es/empresas/"
+          target="blank"
+          aria-label="Ir a la web de Adalab"
+          ><img
+            class="footer__footerLogo--logo"
+            src="./assets/images/logo/logoadalab.png"
+            alt="logo-adalab"
+            title="Adalab"
+            aria-label="Ir a la web de Adalab"
+          />
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>

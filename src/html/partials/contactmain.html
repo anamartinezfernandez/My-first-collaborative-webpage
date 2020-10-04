@@ -1,0 +1,60 @@
+<div class="imageContactContainer">  
+  <img class="imageContactContainer__image" src="./assets/images/hero/herocontact.jpg" alt="Centralita" aria-label="Imagen Contacta con nosotras"  />
+</div>
+<main class="main" role="main">
+  <div class="main__introContainer">
+    <h1 class="main__introContainer--title">Contacta con nosotras</h1>
+    <p class="main__introContainer--text">
+      En estos momentos todas nuestras líneas están saturadas. Si quieres
+      ponerte en contacto con nosotras, rellena el siguiente formulario y te
+      responderemos lo antes posible.
+    </p>
+    <small class="main__introContainer--small"
+      >Todos los campos marcados con <span class="star">*</span> son
+      obligatorios</small
+    >
+  </div>
+
+  <form class="main__formContainer" action="https://formspree.io/xeqpqkbv" method="post" role="form">
+    <div class="main__formContainer--fieldName">
+      <label for="firstName"
+        >Nombre completo <span class="star">*</span>
+      </label>
+      <input class="variableBoxName" id="firstName" type="text" name="firstName" placeholder="Nombre" required />
+    </div>
+    <div class="main__formContainer--fieldEmail">
+      <label for="email">E-mail <span class="star">*</span></label>
+      <input
+        class="variableBoxEmail"
+        id="email"
+        type="email"
+        name="email"
+        placeholder="nombre.apellidos@mail.com"
+        required
+      />
+    </div>
+    <div class="main__formContainer--fieldTelephone">
+      <label for="telephone">Teléfono</label>
+      <input
+        class="variableBoxTelephone"
+        id="telephone"
+        type="tel"
+        name="telephone"
+        placeholder="ej.: 123456789"
+      />
+    </div>
+    <div class="main__formContainer--fieldMessage">
+      <label for="message">Mensaje <span class="star">*</span> </label>
+      <textarea
+        class="variableBoxMsg"
+        id="message"
+        name="message"
+        rows="8"
+        cols="25%"
+        placeholder="¿Qué necesitas?" 
+        required
+      ></textarea>
+    </div>
+    <input class="main__formContainer--button" type="submit" value="ENVIAR" /> 
+    <!-- No hay un texto como tal en "enviar" por eso no se puede transformar en mayúscylas -->
+</main>

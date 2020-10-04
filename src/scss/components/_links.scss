@@ -1,0 +1,57 @@
+.link__adalab:hover {
+  background-color:$color-tertiary;
+  color: $color-white;
+}
+
+.link__github:hover {
+  background-color: $color-hover;
+  color: $color-black;
+}
+
+.header__link--team,
+.header__link--aboutus,
+.header__link--contact {
+  line-height: 30px;
+  font-family: $font-main;
+  font-size: 15px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: $color-white;
+  background-color: none;
+  padding: 6px;
+  border-radius: 0;
+  &:hover {
+    background-color: rgb(24, 124, 124);
+    border-radius: 5px;
+  }
+}
+.header__link--team {
+  width: 56px;
+  height: 30px;
+}
+.header__link--aboutus {
+  width: 121px;
+  height: 30px;
+}
+
+.header__link--contact {
+  width: 80px;
+  height: 30px;
+}
+
+.footer__footerMenuLink {
+  &--team,
+  &--team:visited,
+  &--aboutUs,
+  &--aboutUs:visited,
+  &--contact,
+  &--contact:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}

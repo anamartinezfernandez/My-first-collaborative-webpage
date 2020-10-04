@@ -1,0 +1,761 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* HEADER */
+.page__header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem; }
+
+/* ESTILOS HEADER */
+.header {
+  width: 100%;
+  height: 155px;
+  box-sizing: border-box;
+  position: fixed;
+  align-content: center;
+  text-transform: uppercase;
+  background: #099d8d;
+  opacity: 95%;
+  z-index: 2; }
+  @media all and (min-width: 768px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      height: 110px;
+      align-items: center;
+      padding: 0 45px 0 45px; } }
+  @media all and (min-width: 1200px) {
+    .header {
+      padding: 0 138px 0 138px; } }
+
+/* NOMBRE EQUIPO */
+.header__headerName {
+  width: 100%;
+  height: 110px;
+  opacity: 95%;
+  display: flex; }
+  @media all and (min-width: 768px) {
+    .header__headerName {
+      text-align: left; } }
+
+/* MENÚ */
+.header__teamName {
+  height: 110px;
+  width: 190px;
+  margin: 0 auto; }
+  @media all and (min-width: 768px) {
+    .header__teamName {
+      margin-left: 0; } }
+
+.header__menu {
+  display: block;
+  width: 100vw;
+  height: 45px; }
+  @media all and (min-width: 768px) {
+    .header__menu {
+      height: auto;
+      width: 80%;
+      background: none; } }
+  @media all and (min-width: 1200px) {
+    .header__menu {
+      width: 50%; } }
+
+.header__menuList {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  list-style: none;
+  background-color: #14d9c4; }
+  @media all and (min-width: 768px) {
+    .header__menuList {
+      padding: 0;
+      justify-content: space-between;
+      background: none; } }
+
+/* LINKS MENÚ */
+.header__link--team,
+.header__link--aboutus,
+.header__link--contact {
+  line-height: 30px;
+  font-family: "Rubik";
+  font-size: 15px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: none;
+  padding: 6px;
+  border-radius: 0; }
+  .header__link--team:hover,
+  .header__link--aboutus:hover,
+  .header__link--contact:hover {
+    background-color: #187c7c;
+    border-radius: 5px; }
+
+.header__link--team {
+  width: 56px;
+  height: 30px; }
+
+.header__link--aboutus {
+  width: 121px;
+  height: 30px; }
+
+.header__link--contact {
+  width: 80px;
+  height: 30px; }
+
+/* HERO */
+/* ESTILOS HERO */
+.hero__image {
+  width: 100vw;
+  margin-top: 110px; }
+
+/* LEMA HERO */
+.hero__motto {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: -30px;
+  background-color: #ffffff; }
+  @media all and (min-width: 768px) {
+    .hero__motto {
+      margin: 0 115px 0 115px;
+      top: -40px; } }
+  @media all and (min-width: 1200px) {
+    .hero__motto {
+      margin: 0 138px 0 138px;
+      top: -60px; } }
+
+.hero__mottoText {
+  padding: 15px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal; }
+
+/* ABOUT US */
+.story {
+  margin-top: -66px;
+  padding: 60px 15px 30px 15px; }
+  @media all and (min-width: 768px) {
+    .story {
+      padding: 45px 45px 60px 45px; } }
+  @media all and (min-width: 1200px) {
+    .story {
+      padding: 45px 300px 60px 300px; } }
+
+.aboutUS__strengths--title,
+.aboutUS__weaknesses--title {
+  font-family: "Rubik";
+  font-size: 22px;
+  color: #099d8d;
+  letter-spacing: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 45px;
+  text-align: center;
+  font-weight: 500; }
+
+.aboutUS__strengths {
+  padding: 15px 15px 15px 15px; }
+  @media all and (min-width: 768px) {
+    .aboutUS__strengths {
+      width: 50%;
+      padding: 15px 15px 60px 45px; } }
+  @media all and (min-width: 1200px) {
+    .aboutUS__strengths {
+      padding: 15px 23px 60px 45px; } }
+
+.aboutUS__weaknesses {
+  padding: 15px 15px 45px 15px; }
+  @media all and (min-width: 768px) {
+    .aboutUS__weaknesses {
+      width: 50%;
+      padding: 15px 45px 60px 15px; } }
+  @media all and (min-width: 1200px) {
+    .aboutUS__weaknesses {
+      padding: 15px 45px 60px 23px; } }
+
+.aboutUS__triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 31px solid transparent;
+  border-right: 31px solid transparent;
+  border-top: 31px solid #ffffff;
+  margin: -1px auto; }
+
+.aboutUS {
+  background-color: #b8b8b9; }
+  @media all and (min-width: 1200px) {
+    .aboutUS {
+      margin: auto 138px; } }
+
+.story__title {
+  font-family: "Rubik";
+  color: #099d8d;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  line-height: 45px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 500; }
+
+.story__text,
+.aboutUS__strengths--text,
+.aboutUS__weaknesses--text {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 24px;
+  color: #54585a;
+  text-align: center; }
+
+@media all and (min-width: 768px) {
+  .aboutUS__strengths--text,
+  .aboutUS__weaknesses--text {
+    padding-top: 15px; } }
+
+@media all and (min-width: 768px) {
+  .aboutUS__wrapper {
+    display: flex;
+    flex-direction: row; } }
+
+/* ADALABERS */
+.adalabers {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 15px 20px 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto; }
+  @media all and (min-width: 768px) {
+    .adalabers {
+      padding: 45px 45px 60px 45px; } }
+  @media all and (min-width: 1200px) {
+    .adalabers {
+      padding: 45px 200px 60px 200px; } }
+  .adalabers__title {
+    color: #099d8d;
+    font-size: 24px;
+    font-family: "Rubik";
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center; }
+    @media all and (min-width: 768px) {
+      .adalabers__title {
+        margin-top: 40px;
+        margin-bottom: 40px; } }
+  .adalabers__adalabersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media all and (min-width: 768px) {
+      .adalabers__adalabersContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 25px 60px 25px; } }
+    @media all and (min-width: 768px) {
+      .adalabers__adalabersContainer--even {
+        flex-direction: row-reverse; } }
+
+.adalabersContainer__girlImage {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  border: solid 5px #b8b8b9;
+  border-radius: 2%; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlImage {
+      width: 205px; } }
+
+.adalabersContainer__girlText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px; }
+  @media all and (min-width: 1200px) {
+    .adalabersContainer__girlText {
+      width: 639px; } }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlText--odd {
+      align-items: flex-start; } }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlText--even {
+      align-items: flex-end; } }
+
+.adalabersContainer__girlName {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlName {
+      margin-top: 0px; } }
+
+.adalabersContainer__girlDescription {
+  color: #54585a;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px; }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlDescription--odd {
+      text-align: left; } }
+  @media all and (min-width: 768px) {
+    .adalabersContainer__girlDescription--even {
+      text-align: right; } }
+
+.adalabersContainer__icons {
+  display: flex;
+  width: 35%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  justify-content: space-around; }
+  .adalabersContainer__icons a {
+    color: #099d8d;
+    transition: scale 1.3 0.5s;
+    transform: scale(); }
+    .adalabersContainer__icons a:hover {
+      transform: scale(1.3); }
+
+.adalabersContainer__dot {
+  color: #54585a; }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  border-top: 1px solid #b8b8b9;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 30px 0 45px 0; }
+  @media all and (min-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto; } }
+  @media all and (min-width: 1200px) {
+    .footer {
+      padding: 0 140px 0 140px; } }
+
+.footer__copy2020 {
+  margin: 0 auto;
+  height: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #b8b8b9;
+  grid-row: 1 / 2; }
+  @media all and (min-width: 768px) {
+    .footer__copy2020 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      margin-left: 0;
+      padding: 30px 45px; } }
+
+.footer__footerLogo {
+  margin: 0 auto;
+  grid-row: 3 / 4; }
+  @media all and (min-width: 768px) {
+    .footer__footerLogo {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      margin-left: 0;
+      padding: 15px 0 60px 45px; } }
+
+.footerLogo__logo {
+  width: 115.9px;
+  height: 45px; }
+
+.footer__footerMenu {
+  margin: 0 auto;
+  grid-row: 2 / 3;
+  padding: 20px 0 30px 0; }
+  @media all and (min-width: 768px) {
+    .footer__footerMenu {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      margin-right: 0;
+      padding: 25px 45px; } }
+
+.footer__footerMenuLink {
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  opacity: 0.75;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #54585a; }
+  @media all and (min-width: 768px) {
+    .footer__footerMenuLink {
+      text-align: right;
+      line-height: 2.5; } }
+
+.footer__footerMenuLink--team, .footer__footerMenuLink--team:visited, .footer__footerMenuLink--aboutUs, .footer__footerMenuLink--aboutUs:visited, .footer__footerMenuLink--contact, .footer__footerMenuLink--contact:visited {
+  color: inherit;
+  text-decoration: none; }
+
+/* CONTACT PAGE*/
+.page__header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem; }
+
+/* ESTILOS HEADER */
+.header {
+  width: 100%;
+  height: 155px;
+  box-sizing: border-box;
+  position: fixed;
+  align-content: center;
+  text-transform: uppercase;
+  background: #099d8d;
+  opacity: 95%;
+  z-index: 2; }
+  @media all and (min-width: 768px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      height: 110px;
+      align-items: center;
+      padding: 0 45px 0 45px; } }
+  @media all and (min-width: 1200px) {
+    .header {
+      padding: 0 138px 0 138px; } }
+
+/* NOMBRE EQUIPO */
+.header__headerName {
+  width: 100%;
+  height: 110px;
+  opacity: 95%;
+  display: flex; }
+  @media all and (min-width: 768px) {
+    .header__headerName {
+      text-align: left; } }
+
+/* MENÚ */
+.header__teamName {
+  height: 110px;
+  width: 190px;
+  margin: 0 auto; }
+  @media all and (min-width: 768px) {
+    .header__teamName {
+      margin-left: 0; } }
+
+.header__menu {
+  display: block;
+  width: 100vw;
+  height: 45px; }
+  @media all and (min-width: 768px) {
+    .header__menu {
+      height: auto;
+      width: 80%;
+      background: none; } }
+  @media all and (min-width: 1200px) {
+    .header__menu {
+      width: 50%; } }
+
+.header__menuList {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  list-style: none;
+  background-color: #14d9c4; }
+  @media all and (min-width: 768px) {
+    .header__menuList {
+      padding: 0;
+      justify-content: space-between;
+      background: none; } }
+
+/* LINKS MENÚ */
+.header__link--team,
+.header__link--aboutus,
+.header__link--contact {
+  line-height: 30px;
+  font-family: "Rubik";
+  font-size: 15px;
+  transition: background-color 0.5s, border-radius 0.5s;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: none;
+  padding: 6px;
+  border-radius: 0; }
+  .header__link--team:hover,
+  .header__link--aboutus:hover,
+  .header__link--contact:hover {
+    background-color: #187c7c;
+    border-radius: 5px; }
+
+.header__link--team {
+  width: 56px;
+  height: 30px; }
+
+.header__link--aboutus {
+  width: 121px;
+  height: 30px; }
+
+.header__link--contact {
+  width: 80px;
+  height: 30px; }
+
+.imageContactContainer__image {
+  width: 100vw;
+  margin-top: 110px; }
+  @media all and (min-width: 768px) {
+    .imageContactContainer__image {
+      margin-top: 110px; } }
+
+.main {
+  margin: 30px auto 60px auto; }
+  @media all and (min-width: 768px) {
+    .main {
+      max-width: 442px;
+      margin: 30px auto 60px auto; } }
+  @media all and (min-width: 1200px) {
+    .main {
+      max-width: 600px;
+      margin: 45px auto 120px auto; } }
+  .main__introContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .main__introContainer--title {
+      font-family: "Rubik";
+      text-transform: uppercase;
+      color: #099d8d;
+      font-size: 24px; }
+    .main__introContainer--text {
+      font-family: "Open Sans";
+      color: #54585a;
+      font-size: 16px;
+      padding: 15px 15px; }
+    .main__introContainer--small {
+      font-family: "Open Sans";
+      color: #54585a;
+      font-size: 14px;
+      padding-top: 15px;
+      padding-bottom: 60px; }
+  .main__formContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #54585a; }
+    @media all and (max-width: 767px) {
+      .main__formContainer {
+        max-width: 300px;
+        margin: 30px auto 60px auto; } }
+    .main__formContainer--fieldName {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+    .main__formContainer--fieldEmail {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+      @media all and (min-width: 1200px) {
+        .main__formContainer--fieldEmail {
+          display: inline-block;
+          width: 395px; } }
+    .main__formContainer--fieldTelephone {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+      @media all and (min-width: 1200px) {
+        .main__formContainer--fieldTelephone {
+          display: inline-block;
+          width: 126px; } }
+    .main__formContainer--fieldMessage {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px; }
+
+.star {
+  color: #14d9c4; }
+
+.main__formContainer--button {
+  height: 45px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  background-color: #099d8d;
+  border: none;
+  border-radius: 3px; }
+  @media all and (min-width: 768px) {
+    .main__formContainer--button {
+      width: 206px;
+      align-self: flex-end; } }
+  @media all and (min-width: 1200px) {
+    .main__formContainer--button {
+      width: 278px; } }
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #b8b8b9;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 30px 0 45px 0; }
+  @media all and (min-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto; } }
+  @media all and (min-width: 1200px) {
+    .footer {
+      padding: 0 140px 0 140px; } }
+
+.footer__copy2020 {
+  margin: 0 auto;
+  height: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #b8b8b9;
+  grid-row: 1 / 2; }
+  @media all and (min-width: 768px) {
+    .footer__copy2020 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      margin-left: 0;
+      padding: 30px 45px; } }
+
+.footer__footerLogo {
+  margin: 0 auto;
+  grid-row: 3 / 4; }
+  @media all and (min-width: 768px) {
+    .footer__footerLogo {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      margin-left: 0;
+      padding: 15px 0 60px 45px; } }
+
+.footerLogo__logo {
+  width: 115.9px;
+  height: 45px; }
+
+.footer__footerMenu {
+  margin: 0 auto;
+  grid-row: 2 / 3;
+  padding: 20px 0 30px 0; }
+  @media all and (min-width: 768px) {
+    .footer__footerMenu {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      margin-right: 0;
+      padding: 25px 45px; } }
+
+.footer__footerMenuLink {
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  opacity: 0.75;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #54585a; }
+  @media all and (min-width: 768px) {
+    .footer__footerMenuLink {
+      text-align: right;
+      line-height: 2.5; } }
+
+.footer__footerMenuLink--team, .footer__footerMenuLink--team:visited, .footer__footerMenuLink--aboutUs, .footer__footerMenuLink--aboutUs:visited, .footer__footerMenuLink--contact, .footer__footerMenuLink--contact:visited {
+  color: inherit;
+  text-decoration: none; }
+
+.variableBoxName {
+  height: 45px;
+  margin-top: 5px;
+  padding-left: 3px;
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+.variableBoxEmail {
+  height: 45px;
+  margin-top: 5px;
+  padding-left: 3px;
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+.variableBoxTelephone {
+  height: 45px;
+  margin-top: 5px;
+  padding-left: 3px;
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+.variableBoxMsg {
+  margin-top: 5px;
+  padding-left: 3px;
+  padding-top: 3px;
+  font-family: "Open Sans";
+  font-size: 14px; }
+
+*:focus {
+  outline-color: #14d9c4; }
+
+/*# sourceMappingURL=main.css.map */
